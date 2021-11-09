@@ -70,7 +70,8 @@ body, html {
 .button__gradient {
     border: none;
     background-image: -o-linear-gradient(left bottom, #8f56f3, #9a54f5, #a651f7, #b14df9, #bc49fa, #b93adc, #b32dbf, #aa21a4, #86166e, #5d1442);
-    background-image: -webkit-gradient(linear, left bottom, right top, from(#8f56f3), color-stop(#9a54f5), color-stop(#a651f7), color-stop(#b14df9), color-stop(#bc49fa), color-stop(#b93adc), color-stop(#b32dbf), color-stop(#aa21a4), color-stop(#86166e), to(#5d1442));
+    background-image: -webkit-gradient(linear, left bottom, right top, from(#9f49f4), color-stop(#9a54f5), color-stop(#a651f7), color-stop(#b14df9), color-stop(#bc49fa), color-stop(#b93adc), color-stop(#b32dbf), color-stop(#aa21a4), color-stop(#86166e), to(#5d1442));
+    background-image: -o-linear-gradient(left bottom, #9f49f4, #9a54f5, #a651f7, #b14df9, #bc49fa, #b93adc, #b32dbf, #aa21a4, #86166e, #5d1442);
     background-image: linear-gradient(to right top, #9f49f4, #9a54f5, #a651f7, #b14df9, #bc49fa, #b93adc, #b32dbf, #aa21a4, #86166e, #5d1442);
     padding: 8px 20px;
     border-radius: 40px;
@@ -78,6 +79,7 @@ body, html {
     font-family: 'Jost__Medium';
     font-size: calc(14pt + 0.15vw);
     letter-spacing: 0.02em;
+    -webkit-box-shadow: 0 5.36px 83.896px #2f1034, 0 1px 20px #cd22c0;
     box-shadow: 0 5.36px 83.896px #2f1034, 0 1px 20px #cd22c0;
 }
 
@@ -106,7 +108,7 @@ body, html {
     font-family: 'Jost__Black';
     font-size: var(--h1);
     background: -o-linear-gradient(left, #258ffe 0%, #e112be 75%);
-    background: -webkit-gradient(linear, left top, right top, from(#258ffe), to(#e112be));
+    background: -webkit-gradient(linear, left top, right top, from(#258ffe), color-stop(75%, #e112be));
     background: linear-gradient(to right, #258ffe 0%, #e112be 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -316,7 +318,7 @@ body, html {
 
 .left__gry__col .muti__blue {
     background: -o-linear-gradient(left, #258ffe 0%, #e112be 75%);
-    background: -webkit-gradient(linear, left top, right top, from(#258ffe), to(#e112be));
+    background: -webkit-gradient(linear, left top, right top, from(#258ffe), color-stop(75%, #e112be));
     background: linear-gradient(to right, #258ffe 0%, #e112be 75%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -559,6 +561,8 @@ body, html {
     border: none;
     background-image: -o-linear-gradient(left bottom, #8f56f3, #9a54f5, #a651f7, #b14df9, #bc49fa, #b93adc, #b32dbf, #aa21a4, #86166e, #5d1442);
     background-image: -webkit-gradient(linear, left bottom, right top, from(#8f56f3), color-stop(#9a54f5), color-stop(#a651f7), color-stop(#b14df9), color-stop(#bc49fa), color-stop(#b93adc), color-stop(#b32dbf), color-stop(#aa21a4), color-stop(#86166e), to(#5d1442));
+    background: -webkit-gradient(linear, left top, right top, from(#258ffe), color-stop(40%, #bc49fa));
+    background: -o-linear-gradient(left, #258ffe 0%, #bc49fa 40%);
     background: linear-gradient(to right, #258ffe 0%, #bc49fa 40%);
     width: 26%;
     border-radius: 40px;
@@ -574,7 +578,10 @@ body, html {
 
 @media screen and (max-width: 768px) {
     .social__icons button {
-        width: 40%;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 10px 30px;
     }
 }
 
@@ -590,6 +597,9 @@ body, html {
     }
     .rect__sect #img-10 {
         width: 4%;
+    }
+    .social__icons button {
+        font-size: calc(12pt + 0.15vw);
     }
 }
 
@@ -835,8 +845,8 @@ body, html {
     /* border: 1px solid white; */
     height: auto;
     padding: 50px 0px;
-    background: -webkit-gradient(linear, left bottom, left top, from(#258ffe), color-stop(150%, #f81cd7));
     background: -o-linear-gradient(bottom, #258ffe 0%, #f81cd7 150%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#258ffe), color-stop(150%, #f81cd7));
     background: linear-gradient(to top, #258ffe 0%, #f81cd7 150%);
     color: #f2d7f9;
     border-top-left-radius: 20px;
@@ -1036,8 +1046,8 @@ body, html {
     /* border: 1px solid white; */
     height: auto;
     padding: 50px 0px;
-    background: -webkit-gradient(linear, left bottom, left top, from(#258ffe), color-stop(150%, #f81cd7));
     background: -o-linear-gradient(bottom, #258ffe 0%, #f81cd7 150%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#258ffe), color-stop(150%, #f81cd7));
     background: linear-gradient(to top, #258ffe 0%, #f81cd7 150%);
     color: #f2d7f9;
     border-top-right-radius: 20px;
@@ -1179,8 +1189,8 @@ body, html {
 }
 
 .section__choose h2 .gr__pink {
-    background: -webkit-gradient(linear, left top, right top, from(#258ffe), to(#fa35de));
     background: -o-linear-gradient(left, #258ffe 0%, #fa35de 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#258ffe), to(#fa35de));
     background: linear-gradient(to right, #258ffe 0%, #fa35de 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1245,7 +1255,7 @@ body, html {
     grid-template-columns: repeat(3, 1fr);
     height: auto;
     grid-gap: 4em;
-    max-width: 800px;
+    max-width: 1000px;
     width: 100%;
     margin: auto;
 }
@@ -1294,13 +1304,20 @@ body, html {
     letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 1080px) {
+    .gr_sr__gr {
+        max-width: initial;
+        grid-gap: 1em;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .gr_sr__gr {
         -ms-grid-columns: 1fr 2em 1fr;
         grid-template-columns: repeat(2, 1fr);
     }
     .text-border {
-        height: auto;
+        height: 100px;
     }
 }
 
@@ -1322,14 +1339,23 @@ body, html {
     letter-spacing: 0.02em;
     -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-    background: -webkit-gradient(linear, left top, right top, from(#258ffe), to(#c718ad));
     background: -o-linear-gradient(left, #258ffe 0%, #c718ad 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#258ffe), to(#c718ad));
     background: linear-gradient(to right, #258ffe 0%, #c718ad 100%);
+}
+
+@media screen and (max-width: 1080px) {
+    .section__choose button {
+        width: 55%;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .section__choose button {
-        width: 50%;
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 10px 40px;
     }
 }
 
@@ -1387,8 +1413,8 @@ body, html {
 }
 
 .test__text span {
-    background: -webkit-gradient(linear, left top, right top, from(#258ffe), to(#fa35de));
     background: -o-linear-gradient(left, #258ffe 0%, #fa35de 100%);
+    background: -webkit-gradient(linear, left top, right top, from(#258ffe), to(#fa35de));
     background: linear-gradient(to right, #258ffe 0%, #fa35de 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1411,6 +1437,10 @@ body, html {
     .test__sec #img-22 {
         left: 0;
         width: 8%;
+    }
+    .section__choose button {
+        font-size: calc(10pt + 0.15vw);
+        padding: 10px 15px;
     }
 }
 
@@ -1459,8 +1489,8 @@ body, html {
 }
 
 .bl__test__left__aside__col {
-    background: -webkit-gradient(linear, left bottom, left top, from(#258ffe), color-stop(150%, #f81cd7));
     background: -o-linear-gradient(bottom, #258ffe 0%, #f81cd7 150%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#258ffe), color-stop(150%, #f81cd7));
     background: linear-gradient(to top, #258ffe 0%, #f81cd7 150%);
     height: 150px;
     border-radius: 20px;
@@ -1502,6 +1532,8 @@ body, html {
     font-family: 'Jost__Regular';
     letter-spacing: 0.03em;
     line-height: 1.195;
+    -webkit-transform: translateY(14px);
+    -ms-transform: translateY(14px);
     transform: translateY(14px);
 }
 
@@ -1519,8 +1551,9 @@ body, html {
 
 .test__text button {
     border: none;
-    background: -webkit-gradient(linear, left bottom, left top, from(#258ffe), color-stop(100%, #f81cd7));
     background: -o-linear-gradient(left, #258ffe 10%, #258ffe 80%);
+    background: -webkit-gradient(linear, left top, right top, from(#258ffe), color-stop(60%, #f81cd7));
+    background: -o-linear-gradient(left, #258ffe 0%, #f81cd7 60%);
     background: linear-gradient(to right, #258ffe 0%, #f81cd7 60%);
     padding: 8px;
     border-radius: 40px;
@@ -1585,6 +1618,8 @@ body, html {
 .gr__right__footer__col {
     height: auto;
     margin: auto;
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
     transform: translateX(50px);
 }
 
@@ -1637,7 +1672,15 @@ body, html {
         top: -184px;
     }
     .gr__right__footer__col {
+        -webkit-transform: translateX(0px);
+        -ms-transform: translateX(0px);
         transform: translateX(0px);
+    }
+    .test__text button {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        padding: 10px 40px;
     }
 }
 
@@ -1669,7 +1712,8 @@ body, html {
 }
 
 .navbar-expand-lg {
-    width: 1400px;
+    max-width: 1400px;
+    width: 100%;
     margin: auto;
 }
 
@@ -1681,11 +1725,31 @@ body, html {
     .left__gry__col {
         padding: 0px 60px;
     }
+    .navbar-expand-lg {
+        max-width: initial;
+        width: 100%;
+    }
+    .left__gry__col {
+        top: 13%;
+    }
+    .column__grey {
+        -webkit-box-pack: initial;
+        -ms-flex-pack: initial;
+        justify-content: initial;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .left__gry__col p {
         font-size: calc(12pt + 0.15vw);
+    }
+    .left__gry__col {
+        top: 30%;
+    }
+    .column__grey {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
     }
 }
 
@@ -1762,12 +1826,17 @@ body, html {
 }
 
 .text-border p {
+    -webkit-transform: translateY(10px);
+    -ms-transform: translateY(10px);
     transform: translateY(10px);
 }
 
 @media screen and (max-width: 538px) {
     .video__src iframe {
         width: 320px;
+    }
+    .test__text button {
+        font-size: calc(12pt + 0.15vw);
     }
 }
 
