@@ -630,12 +630,6 @@ body, html {
     line-height: 0;
 }
 
-@media screen and (max-width: 768px) {
-    .video__text__div h3 span {
-        font-size: var(--h3-Mob);
-    }
-}
-
 /* xxxxxxxxxxxxxxxxxxxxxxxxx */
 
 .video-img {
@@ -1771,7 +1765,7 @@ body, html {
 
 .video__text__div h3 span {
     letter-spacing: 0.02em !important;
-    font-size: calc(24pt + 0.15vw) !important;
+    font-size: calc(24pt + 0.15vw);
 }
 
 .video__text__div h4 span {
@@ -1831,6 +1825,12 @@ body, html {
     transform: translateY(10px);
 }
 
+@media screen and (max-width: 768px) {
+    .video__text__div h3 span {
+        font-size: calc(12pt + 0.15vw);
+    }
+}
+
 @media screen and (max-width: 538px) {
     .video__src iframe {
         width: 320px;
@@ -1845,3 +1845,4 @@ body, html {
         width: 280px;
     }
 }
+
